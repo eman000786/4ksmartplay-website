@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4ksmartplay - Premium IPTV Subscription Service</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a;
+            color: #e2e8f0;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .plan-card {
+            transition: all 0.3s ease;
+        }
+        .plan-card:hover {
+            transform: scale(1.03);
+        }
+        .accent-gradient {
+            background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+        }
+        .whatsapp-float {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            z-index: 100;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+            }
+        }
+        .device-mockup {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .section {
+            padding: 80px 0;
+        }
+        .nav-link {
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover:after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="gradient-bg py-6">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="text-2xl font-bold">
+                <span class="text-white">4k</span><span class="text-blue-400">smart</span><span class="text-green-400">play</span>
+            </div>
+            <div class="hidden md:flex space-x-10">
+                <a href="#features" class="nav-link text-gray-300 hover:text-white">Features</a>
+                <a href="#plans" class="nav-link text-gray-300 hover:text-white">Plans</a>
+                <a href="#faq" class="nav-link text-gray-300 hover:text-white">FAQ</a>
+                <a href="#contact" class="nav-link text-gray-300 hover:text-white">Contact</a>
+            </div>
+            <a href="#contact" class="btn-primary px-6 py-2 rounded-lg text-white font-medium shadow-lg">Get Started</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg section">
+        <div class="container mx-auto px-6 py-16 md:flex md:items-center">
+            <div class="md:w-1/2 mb-12 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">Stream Your Favorite Content in <span class="text-blue-400">4K Quality</span></h1>
+                <p class="text-xl mb-8 text-gray-300">Experience premium entertainment with 4ksmartplay IPTV service. Access thousands of channels, movies, and series at your fingertips.</p>
+                <div class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
+                    <a href="#plans" class="btn-primary px-8 py-3 rounded-lg text-white font-medium text-center">View Plans</a>
+                    <a href="#features" class="bg-transparent border-2 border-blue-400 px-8 py-3 rounded-lg text-white font-medium text-center hover:bg-blue-400/10 transition-all">Explore Features</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="device-mockup bg-gray-800 rounded-xl p-2 w-full max-w-md">
+                    <div class="rounded-lg overflow-hidden">
+                        <img src="https://cdn.jsdelivr.net/gh/IPTV-Apps/mock-images@main/iptv-showcase.jpg" alt="4ksmartplay Demo" class="w-full">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="bg-gray-900 section">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Premium IPTV Features</h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">Everything you need for an exceptional entertainment experience</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="bg-gray-800 rounded-xl p-8 card-hover transition-all">
+                    <div class="text-blue-400 text-4xl mb-6">
+                        <i class="fas fa-tv"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Live TV Channels</h3>
+                    <p class="text-gray-400">Access thousands of live channels from around the world in HD and 4K quality.</p>
+                </div>
+                <div class="bg-gray-800 rounded-xl p-8 card-hover transition-all">
+                    <div class="text-blue-400 text-4xl mb-6">
+                        <i class="fas fa-history"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Catch-Up TV</h3>
+                    <p class="text-gray-400">Missed your favorite show? No problem. Watch up to 7 days of past programming.</p>
+                </div>
+                <div class="bg-gray-800 rounded-xl p-8 card-hover transition-all">
+                    <div class="text-blue-400 text-4xl mb-6">
+                        <i class="fas fa-film"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">VOD Movies</h3>
+                    <p class="text-gray-400">Enjoy a vast library of on-demand movies in multiple genres and languages.</p>
+                </div>
+                <div class="bg-gray-800 rounded-xl p-8 card-hover transition-all">
+                    <div class="text-blue-400 text-4xl mb-6">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">TV Series</h3>
+                    <p class="text-gray-400">Binge-watch complete seasons of popular TV series from networks worldwide.</p>
+                </div>
+                <div class="bg-gray-800 rounded-xl p-8 card-hover transition-all">
+                    <div class="text-blue-400 text-4xl mb-6">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Multi-Device Support</h3>
+                    <p class="text-gray-400">Watch on Smart TVs, smartphones, tablets, computers, and streaming boxes.</p>
+                </div>
+                <div class="bg-gray-800 rounded-xl p-8 card-hover transition-all">
+                    <div class="text-blue-400 text-4xl mb-6">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">24/7 Support</h3>
+                    <p class="text-gray-400">Our dedicated support team is available to help you whenever you need assistance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compatible Devices -->
+    <section class="gradient-bg section">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Compatible With All Your Devices</h2>
+                <p class="text-xl text-gray-300 max-w-2xl mx-auto">Our service works seamlessly across a wide range of devices</p>
+            </div>
+            <div class="flex flex-wrap justify-center gap-8 items-center">
+                <div class="text-center">
+                    <div class="text-5xl mb-4 text-gray-200">
+                        <i class="fab fa-android"></i>
+                    </div>
+                    <span class="text-gray-300">Android</span>
+                </div>
+                <div class="text-center">
+                    <div class="text-5xl mb-4 text-gray-200">
+                        <i class="fab fa-apple"></i>
+                    </div>
+                    <span class="text-gray-300">iOS</span>
+                </div>
+                <div class="text-center">
+                    <div class="text-5xl mb-4 text-gray-200">
+                        <i class="fas fa-tv"></i>
+                    </div>
+                    <span class="text-gray-300">Smart TV</span>
+                </div>
+                <div class="text-center">
+                    <div class="text-5xl mb-4 text-gray-200">
+                        <i class="fab fa-windows"></i>
+                    </div>
+                    <span class="text-gray-300">Windows</span>
+                </div>
+                <div class="text-center">
+                    <div class="text-5xl mb-4 text-gray-200">
+                        <i class="fab fa-linux"></i>
+                    </div>
+                    <span class="text-gray-300">Linux</span>
+                </div>
+                <div class="text-center">
+                    <div class="text-5xl mb-4 text-gray-200">
+                        <i class="fab fa-amazon"></i>
+                    </div>
+                    <span class="text-gray-300">Fire TV</span>
+                </div>
+                <div class="text-center">
+                    <div class="text-5xl mb-4 text-gray-200">
+                        <i class="fas fa-box"></i>
+                    </div>
+                    <span class="text-gray-300">MAG Box</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="plans" class="bg-gray-900 section">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Simple, Transparent Pricing</h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">Choose the plan that fits your needs</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Monthly Plan -->
+                <div class="bg-gray-800 rounded-xl p-8 plan-card relative overflow-hidden">
+                    <div class="text-center mb-6">
+                        <h3 class="text-xl font-bold mb-2">Monthly</h3>
+                        <p class="text-gray-400 mb-6">Perfect for trying our service</p>
+                        <div class="flex justify-center items-end">
+                            <span class="text-gray-400 mr-2">Contact for price</span>
+                        </div>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Full channel access</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>HD & 4K quality</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>VOD included</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>1 connection</span>
+                        </li>
+                    </ul>
+                    <div class="text-center">
+                        <a href="https://wa.me/message/J57HF5KVRMSUJ1" class="btn-primary w-full py-3 rounded-lg text-white font-medium block">Get Started</a>
+                    </div>
+                </div>
+                
+                <!-- 3 Month Plan -->
+                <div class="bg-gray-800 rounded-xl p-8 plan-card relative overflow-hidden">
+                    <div class="text-center mb-6">
+                        <h3 class="text-xl font-bold mb-2">3 Months</h3>
+                        <p class="text-gray-400 mb-6">Our most popular plan</p>
+                        <div class="flex justify-center items-end">
+                            <span class="text-gray-400 mr-2">Contact for price</span>
+                        </div>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Full channel access</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>HD & 4K quality</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>VOD included</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>2 connections</span>
+                        </li>
+                    </ul>
+                    <div class="text-center">
+                        <a href="https://wa.me/message/J57HF5KVRMSUJ1" class="btn-primary w-full py-3 rounded-lg text-white font-medium block">Get Started</a>
+                    </div>
+                </div>
+                
+                <!-- 6 Month Plan -->
+                <div class="bg-gray-800 rounded-xl p-8 plan-card relative overflow-hidden border-2 border-blue-500">
+                    <div class="absolute top-0 right-0">
+                        <div class="bg-blue-500 text-white px-4 py-1 rounded-bl-lg text-sm font-bold">POPULAR</div>
+                    </div>
+                    <div class="text-center mb-6">
+                        <h3 class="text-xl font-bold mb-2">6 Months</h3>
+                        <p class="text-gray-400 mb-6">Great value package</p>
+                        <div class="flex justify-center items-end">
+                            <span class="text-gray-400 mr-2">Contact for price</span>
+                        </div>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Full channel access</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>HD & 4K quality</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>VOD included</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>3 connections</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Priority support</span>
+                        </li>
+                    </ul>
+                    <div class="text-center">
+                        <a href="https://wa.me/message/J57HF5KVRMSUJ1" class="btn-primary w-full py-3 rounded-lg text-white font-medium block">Get Started</a>
+                    </div>
+                </div>
+                
+                <!-- Yearly Plan -->
+                <div class="bg-gray-800 rounded-xl p-8 plan-card relative overflow-hidden">
+                    <div class="text-center mb-6">
+                        <h3 class="text-xl font-bold mb-2">Yearly</h3>
+                        <p class="text-gray-400 mb-6">Best value for money</p>
+                        <div class="flex justify-center items-end">
+                            <span class="text-gray-400 mr-2">Contact for price</span>
+                        </div>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Full channel access</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>HD & 4K quality</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>VOD included</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>4 connections</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>VIP support</span>
+                        </li>
+                    </ul>
+                    <div class="text-center">
+                        <a href="https://wa.me/message/J57HF5KVRMSUJ1" class="btn-primary w-full py-3 rounded-lg text-white font-medium block">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="gradient-bg section">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">What Our Customers Say</h2>
+                <p class="text-xl text-gray-300 max-w-2xl mx-auto">Trusted by thousands of satisfied customers worldwide</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-800 bg-opacity-50 p-8 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="mb-6 text-gray-300">"Incredible service with thousands of channels. The quality is excellent and the customer support team is very responsive. Highly recommended!"</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 b
