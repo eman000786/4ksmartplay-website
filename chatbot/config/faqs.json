@@ -1,0 +1,52 @@
+{
+    "what_is_iptv": {
+        "keywords": ["what is iptv", "iptv meaning", "define iptv", "iptv definition", "internet tv"],
+        "answer": "IPTV (Internet Protocol Television) is a system where television content is delivered using Internet Protocol over a network infrastructure, which may include delivery by a broadband connection. Unlike traditional terrestrial, satellite, and cable TV, IPTV gives you the ability to stream content continuously, offering features like video on demand, live TV, and time-shifted media.",
+        "action": null
+    },
+    "how_to_subscribe": {
+        "keywords": ["how to subscribe", "subscription process", "how to sign up", "how to join", "get started"],
+        "answer": "Subscribing to our IPTV service is easy! Simply choose your preferred plan, provide your contact details, and we'll set up your account within 24 hours. You'll receive login credentials and setup instructions via email.",
+        "action": "show_subscription_form"
+    },
+    "channels_offered": {
+        "keywords": ["what channels", "channel list", "available channels", "channel packages", "what can i watch"],
+        "answer": "We offer a comprehensive range of channels including:\n\n• Premium sports channels (ESPN, Fox Sports, Sky Sports)\n• International channels from 50+ countries\n• Movie and entertainment channels (HBO, Netflix content, Hulu)\n• News channels (CNN, BBC, Fox News)\n• Kids channels (Disney, Cartoon Network)\n• Music channels and radio stations\n\nThe exact channel lineup depends on your subscription plan.",
+        "action": null
+    },
+    "renewal_process": {
+        "keywords": ["renew subscription", "renewal", "extend subscription", "reactivate", "expired"],
+        "answer": "To renew your IPTV subscription:\n\n1. Contact our support team via WhatsApp or email\n2. Choose your renewal period (monthly, quarterly, or yearly)\n3. Complete the payment process\n4. Your service will be extended automatically\n\nWe'll send you renewal reminders before your subscription expires.",
+        "action": null
+    },
+    "troubleshooting": {
+        "keywords": ["not working", "buffering", "connection issues", "streaming problems", "troubleshoot", "fix", "broken"],
+        "answer": "Common streaming issues and solutions:\n\n• **Buffering**: Check your internet speed (minimum 10 Mbps recommended)\n• **Connection problems**: Restart your device and router\n• **App crashes**: Clear app cache or reinstall the IPTV app\n• **No sound/video**: Check audio/video settings in the app\n\nIf problems persist, please contact our technical support team.",
+        "action": null
+    },
+    "device_compatibility": {
+        "keywords": ["compatible devices", "what devices", "smart tv", "android", "ios", "firestick"],
+        "answer": "Our IPTV service works on a wide range of devices:\n\n• Smart TVs (Samsung, LG, Sony)\n• Android devices (phones, tablets, TV boxes)\n• iOS devices (iPhone, iPad, Apple TV)\n• Amazon Fire TV/Firestick\n• Windows and Mac computers\n• Roku devices\n• MAG boxes\n\nWe provide detailed setup guides for each device type.",
+        "action": null
+    },
+    "payment_methods": {
+        "keywords": ["payment", "how to pay", "payment methods", "credit card", "paypal"],
+        "answer": "We accept various payment methods for your convenience:\n\n• Credit/Debit Cards (Visa, MasterCard, American Express)\n• PayPal\n• Bank Transfer\n• Cryptocurrency (Bitcoin, Ethereum)\n• Gift Cards\n\nAll payments are processed securely through encrypted channels.",
+        "action": null
+    },
+    "free_trial": {
+        "keywords": ["free trial", "trial period", "test", "demo", "try before buy"],
+        "answer": "Yes! We offer a 24-hour free trial so you can test our service quality and channel selection before subscribing. The trial includes:\n\n• Access to all channels in your selected plan\n• Full HD streaming quality\n• Technical support\n\nNo credit card required for the trial - just contact us to get started!",
+        "action": "show_subscription_form"
+    },
+    "customer_support": {
+        "keywords": ["support", "help", "contact", "customer service", "assistance"],
+        "answer": "Our customer support team is available 24/7 to help you:\n\n• **WhatsApp**: Quick responses for urgent issues\n• **Email**: Detailed technical support\n• **Live Chat**: Right here in this chatbot!\n\nWe typically respond within 30 minutes during business hours and within 2 hours outside business hours.",
+        "action": null
+    },
+    "internet_speed": {
+        "keywords": ["internet speed", "bandwidth", "connection requirements", "minimum speed"],
+        "answer": "Recommended internet speeds for optimal IPTV streaming:\n\n• **SD Quality**: 5 Mbps minimum\n• **HD Quality**: 10-15 Mbps recommended\n• **4K/UHD Quality**: 25+ Mbps recommended\n• **Multiple devices**: Add 5-10 Mbps per additional stream\n\nWired connections generally provide better stability than Wi-Fi for streaming.",
+        "action": null
+    }
+}
