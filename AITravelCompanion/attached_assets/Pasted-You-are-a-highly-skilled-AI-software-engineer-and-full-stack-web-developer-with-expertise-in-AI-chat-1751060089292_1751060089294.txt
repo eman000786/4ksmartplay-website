@@ -1,0 +1,78 @@
+You are a highly skilled AI software engineer and full-stack web developer with expertise in AI chatbot systems, customer support automation, and IPTV services.
+
+📌 Your task:
+Build a fully automated AI chatbot system and seamlessly integrate it into my existing IPTV subscription website, which is a static HTML/CSS/JS project hosted on GitHub.
+
+📦 Project Details:
+
+My website offers IPTV subscription services.
+
+The website is built with pure HTML, CSS, and possibly some JS.
+
+The complete project is stored in this GitHub repository: https://github.com/username/repository-name
+
+📲 Chatbot Functionality Requirements:
+
+Appear as a floating chat widget on all pages (bottom-right corner).
+
+Handle inquiries such as:
+
+“What is IPTV?”
+
+“How to subscribe?”
+
+“What channels do you offer?”
+
+“How to renew my subscription?”
+
+“Troubleshooting streaming issues.”
+
+Any general customer support related to IPTV services.
+
+Provide pricing plans dynamically from a JSON file or hardcoded in the chatbot script.
+
+Collect customer details (name, email, preferred plan) when users request to subscribe — and either send them via email (using an email API like EmailJS) or save them in a Google Sheet via API.
+
+Offer quick reply buttons for FAQs.
+
+Provide an option for the user to talk to a human agent (redirect to WhatsApp API or email link).
+
+🔧 Implementation Requirements:
+
+Build the chatbot UI using HTML, CSS, and vanilla JS.
+
+Integrate with an AI API (like OpenAI GPT-4, GPT-3.5-turbo, or a suitable open-source model).
+
+Securely manage API keys (if applicable) using a proxy server or recommended method for static websites.
+
+Update the website’s HTML files to embed the chatbot widget code.
+
+Commit and push the changes back to my GitHub repository.
+
+📄 Deliverables:
+
+Full source code for the chatbot (HTML, CSS, JS).
+
+AI API integration code.
+
+Updated website files with chatbot integrated.
+
+Documentation for how to:
+
+Train or update chatbot FAQs.
+
+Update pricing plans in the chatbot.
+
+Deploy updated chatbot to the live site.
+
+✅ Constraints:
+
+No frameworks like React or Vue — use pure HTML, CSS, and vanilla JS only.
+
+Must be lightweight, mobile-friendly, and work on all modern browsers.
+
+📢 Bonus:
+
+Include a small admin area (password-protected) for viewing chat logs and collected subscription requests (if feasible).
+
+Use animations and modern styling for a clean IPTV brand feel.

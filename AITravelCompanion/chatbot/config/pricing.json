@@ -1,0 +1,63 @@
+{
+    "plans": [
+        {
+            "id": "basic",
+            "name": "Basic Plan",
+            "price": "$9.99/month",
+            "features": [
+                "1000+ Live TV Channels",
+                "Basic Sports Packages",
+                "Standard Definition (SD)",
+                "2 Device Connections",
+                "Email Support",
+                "EPG (Electronic Program Guide)"
+            ],
+            "popular": false,
+            "savings": null
+        },
+        {
+            "id": "premium",
+            "name": "Premium Plan",
+            "price": "$19.99/month",
+            "features": [
+                "5000+ Live TV Channels",
+                "Premium Sports & Movies",
+                "High Definition (HD)",
+                "5 Device Connections", 
+                "VOD Library Access",
+                "24/7 Support",
+                "Catch-up TV (7 days)",
+                "Multi-language Support"
+            ],
+            "popular": true,
+            "savings": "Most Popular!"
+        },
+        {
+            "id": "ultimate",
+            "name": "Ultimate Plan",
+            "price": "$29.99/month", 
+            "features": [
+                "8000+ Live TV Channels",
+                "All Sports & Premium Content",
+                "4K Ultra HD Support",
+                "Unlimited Device Connections",
+                "Full VOD Library (50,000+ titles)",
+                "Priority 24/7 Support",
+                "EPG & Catch-up TV (14 days)",
+                "Adult Content Package",
+                "Multi-room Support"
+            ],
+            "popular": false,
+            "savings": "Best Value!"
+        }
+    ],
+    "annual_discount": {
+        "enabled": true,
+        "discount_percentage": 20,
+        "message": "Save 20% with annual billing!"
+    },
+    "currency": "USD",
+    "billing_cycles": ["monthly", "quarterly", "annual"],
+    "trial_available": true,
+    "trial_duration": "24 hours"
+}
