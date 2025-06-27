@@ -1,6 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- ADD THIS TO THE <HEAD> SECTION OF YOUR INDEX.HTML -->
+<!-- Place this after your existing CSS links -->
+
+<!-- IPTV Chatbot Integration -->
+<link rel="stylesheet" href="chatbot/chatbot.css">
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<!-- Configure chatbot settings for 4ksmartplay -->
+<script>
+    window.EMAILJS_PUBLIC_KEY = 'your_emailjs_key_here'; // Optional: Get from emailjs.com
+    window.WHATSAPP_NUMBER = 'https://wa.me/message/J57HF5KVRMSUJ1'; // Your WhatsApp link
+    window.BUSINESS_EMAIL = 'support@4ksmartplay.com'; // Your business email
+</script>
+
+<!-- Chatbot styling to match your theme -->
+<style>
+.chatbot-widget .chat-toggle {
+    background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%) !important;
+    box-shadow: 0 4px 20px rgba(59, 130, 246, 0.4) !important;
+}
+.chatbot-widget .chat-header {
+    background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%) !important;
+}
+.chatbot-widget .chat-window {
+    border: 1px solid rgba(59, 130, 246, 0.2) !important;
+}
+</style>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>4ksmartplay IPTV - Stream Premium Entertainment in 4K Quality</title>
@@ -789,5 +817,32 @@
             });
         });
     </script>
+<!-- ADD THIS BEFORE THE CLOSING </BODY> TAG -->
+<!-- Place this at the very end of your HTML, before </body> -->
+
+<!-- AI Chatbot Widget Container -->
+<div id="iptv-chatbot-container"></div>
+
+<!-- Load chatbot functionality -->
+<script>
+// Load chatbot HTML content
+fetch('chatbot/chatbot.html')
+    .then(response => response.text())
+    .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+        const chatbotWidget = doc.getElementById('chatbot-widget');
+        
+        if (chatbotWidget) {
+            document.getElementById('iptv-chatbot-container').appendChild(chatbotWidget);
+            const script = document.createElement('script');
+            script.src = 'chatbot/chatbot.js';
+            document.head.appendChild(script);
+        }
+    })
+    .catch(error => {
+        console.error('Failed to load chatbot:', error);
+    });
+</script>
 </body>
 </html>
