@@ -793,6 +793,58 @@
             });
         });
     </script>
+ <!-- 🔵 Chatbot Toggle Button + Window -->
+<style>
+  #chatbot-toggle {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 1000;
+  }
+
+  #chatbot-window {
+    position: fixed;
+    bottom: 100px;
+    right: 25px;
+    width: 350px;
+    height: 500px;
+    display: none;
+    border: none;
+    z-index: 999;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+  }
+</style>
+
+<!-- Floating Chat Icon -->
+<button id="chatbot-toggle" title="Chat with us">💬</button>
+
+<!-- Hidden Chat Iframe -->
+<iframe
+  id="chatbot-window"
+  src="https://www.chatbase.co/chatbot-iframe/bBOnUSB_MbpZ6YNhoqhvQ"
+></iframe>
+
+<script>
+  const chatbotToggle = document.getElementById("chatbot-toggle");
+  const chatbotWindow = document.getElementById("chatbot-window");
+
+  chatbotToggle.addEventListener("click", () => {
+    if (chatbotWindow.style.display === "none") {
+      chatbotWindow.style.display = "block";
+    } else {
+      chatbotWindow.style.display = "none";
+    }
+  });
+</script>
 
 </body>
 </html>
